@@ -1,0 +1,5 @@
+Launching experiment: ./config/Custom_RotNet_AlexNet.py
+Loading experiment Custom_RotNet_AlexNet from file: ./config/Custom_RotNet_AlexNet.py
+Generated logs, snapshots, and model files will be stored on ./experiments/Custom_RotNet_AlexNet
+custom
+custom
