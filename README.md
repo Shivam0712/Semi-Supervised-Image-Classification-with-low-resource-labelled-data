@@ -19,7 +19,7 @@ We use a convolutional version of VAE with the encoder architecture based on Ale
 We introduce a Variational autoencoder with a siamese triplet loss on the latent space representation. KL loss and reconstruction loss, which are the usual loss terms used to train VAE inspired by the use of Siamese triplet loss for unsupervised learning from videos we decided to experiment this loss term with VAE. Code can be found [here](https://github.com/muaz-urwa/Siamese-Regulated-Convolutional-Variational-Auto-Encoder).
 <img src="siamvae.png" width="800">
 
-<img src="iresult.png" width="800">
+<img src="iresult.png" width="400">
 For simplicity and meaningful comparison, we use AlexNet based architecture for all above mentioned three tasks. We trained all the three models for 20 epochs only, which means that this preliminary analysis is not a comprehensive comparison of these approaches. RotNet produces the best results in our exploratory experiments, and thus, we decided to develop our solution upon it. It is interesting to note that VAE performed slightly better than VAE with triplet loss on latent space. However, these preliminary results are far from conclusive, and we think it would be interesting to explore the siamese regularized VAE in more depth.
 
 #### Pretraining
@@ -31,7 +31,7 @@ Features were extracted from the fourth convolution layer, and three fully conne
 #### Whole Network Fine Tuning:
 Eventually, we fine-tuned the network trained on the entire labeled data. Both feature extractor and classifier, which were separately trained before, were fine-tuned together with a small learning rate for 15 epochs. This network was submitted to the competition track.
 #### Totally supervised benchmar for this dataset is 40% top5 accuracy.
-<img src="result.png" width="800">
+<img src="result.png" width="500">
 
 It is fairly evident that in a scenario when you do not have access to a large number of labelled images, unsupervised pretraining on unlabelled dataset can provide advantage over a fully unsupervised approach. Furthermore, the performance after unsupervised pretraining appears to be reasonably robust and does not decrease dramatically with large decreases in size of labelled data. 
 
