@@ -8,7 +8,7 @@ Relevant term Paper can be found [here](DeepLearningReport.pdf).
 Over-reliance on supervised image tasks leaves us with a dependence on large volumes of human-labeled data, a luxury that is not available across all domains. In contrast, it is comparatively easy to accumulate a large dataset of unlabeled images.  Consequently, to use the unlabeled datasets, it is vital to learn meaningful representation through unsupervised training.  In this study, we evaluate unsupervised training methodologies by analyzing their efficacy in a downstream image classification task with limited labeled data. We try the following unsupervised tasks:
 
 ### Rotation Classification
-For each image, we produce four rotated copies of the image, and train modified AlexNet to predict the rotation. The four rotations which serve as a supervisory signal are 0,90,180 and 270 degrees.
+For each image, we produce four rotated copies of the image, and train modified AlexNet to predict the rotation. The four rotations which serve as a supervisory signal are 0,90,180 and 270 degrees. This repo contains the relevant code, codebase was adopted from [here](https://github.com/gidariss/FeatureLearningRotNet).
 <img src="rotnet.png" width="800">
 
 ### Variational Auto Encoder
