@@ -21,6 +21,7 @@ We introduce a Variational autoencoder with a siamese triplet loss on the latent
 
 <img src="iresult.png" width="400">
 For simplicity and meaningful comparison, we use AlexNet based architecture for all above mentioned three tasks. We trained all the three models for 20 epochs only, which means that this preliminary analysis is not a comprehensive comparison of these approaches. RotNet produces the best results in our exploratory experiments, and thus, we decided to develop our solution upon it. It is interesting to note that VAE performed slightly better than VAE with triplet loss on latent space. However, these preliminary results are far from conclusive, and we think it would be interesting to explore the siamese regularized VAE in more depth.
+<img src="plot.png" width="400">
 
 #### Pretraining
 AlexNet was trained for rotation classification using extensive data augmentation for 63 epochs. We used the hyperparameters documented by Rotnet\cite{gidaris2018unsupervised} in their paper. 
