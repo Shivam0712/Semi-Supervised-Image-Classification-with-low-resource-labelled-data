@@ -34,4 +34,5 @@ Eventually, we fine-tuned the network trained on the entire labeled data. Both f
 <img src="result.png" width="500">
 
 It is fairly evident that in a scenario when you do not have access to a large number of labelled images, unsupervised pretraining on unlabelled dataset can provide advantage over a fully unsupervised approach. Furthermore, the performance after unsupervised pretraining appears to be reasonably robust and does not decrease dramatically with large decreases in size of labelled data. 
+
 <img src="plot.png" width="400">
